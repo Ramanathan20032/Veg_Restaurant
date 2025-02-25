@@ -108,3 +108,104 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 500); // Delays animation for better effect
 });
 
+
+// !--------------------------------------------------------------------------------
+// Menu
+document.addEventListener("DOMContentLoaded", () => {
+  const menuContainer = document.getElementById("menu-container");
+  const categoryButtons = document.querySelectorAll(".category-btn");
+
+  let menuData = {};
+
+  // Fetch JSON data
+  fetch("data.json")
+    .then((response) => response.json())
+    .then((data) => {
+      menuData = data;
+      loadMenu("all"); // Default: Show first 2 from each category
+    });
+
+  // Function to load menu items with smooth transition
+  function loadMenu(category) {
+    // Start fade-out effect
+    menuContainer.style.opacity = "0";
+    menuContainer.style.transform = "translateY(10px)";
+
+    setTimeout(() => {
+      menuContainer.innerHTML = ""; // Clear previous items
+
+      let itemsToShow = [];
+
+      if (category === "all") {
+        // Show first 2 items from each category
+        Object.values(menuData).forEach((items) => {
+          itemsToShow.push(...items.slice(0, 2));
+        });
+      } else {
+        // Show all items from the selected category
+        itemsToShow = menuData[category];
+      }
+
+      // Generate and display menu cards
+      itemsToShow.forEach((item) => {
+        const menuItem = document.createElement("div");
+        menuItem.classList.add(
+          "col-12",
+          "col-sm-6",
+          "col-md-6",
+          "col-lg-3",
+          "mb-3",
+          "card-container"
+        );
+
+        menuItem.innerHTML = `
+          <div class="card custom-card">
+              <img src="${item.image}" class="card-img-top" alt="${item.name}">
+              <div class="card-body text-center">
+                  <h5 class="card-title m-0">${item.name}</h5>
+              </div>
+          </div>
+        `;
+
+        menuContainer.appendChild(menuItem);
+      });
+
+      // Apply fade-in effect after content is updated
+      setTimeout(() => {
+        menuContainer.style.opacity = "1";
+        menuContainer.style.transform = "translateY(0)";
+      }, 50);
+    }, 300);
+  }
+
+  // Handle category button clicks with proper active state
+  categoryButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      categoryButtons.forEach((btn) => {
+        btn.classList.remove("active");
+        btn.classList.add("btn-outline-warning");
+        btn.classList.remove("btn-warning");
+      });
+
+      button.classList.add("active");
+      button.classList.remove("btn-outline-warning");
+      button.classList.add("btn-warning");
+
+      const category = button.getAttribute("data-category");
+      loadMenu(category);
+    });
+  });
+});
+
+
+// !--------------------------------------------------------------------------------
+// Testimonial
+document.addEventListener("DOMContentLoaded", function () {
+  let myCarousel = document.querySelector("#testimonialCarousel");
+  let carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 3000, // Auto-slide every 3 seconds
+    ride: "carousel",
+    pause: "hover",
+    wrap: true,
+  });
+});

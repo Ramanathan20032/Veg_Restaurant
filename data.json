@@ -1,0 +1,138 @@
+{
+  "breakfast": [
+    {
+      "name": "Dosa",
+      "image": "Images/Menu/BreakFast/Dosa.jpg"
+    },
+    {
+      "name": "Idli",
+      "image": "Images/Menu/BreakFast/idly.jpg"
+    },
+    {
+      "name": "Poori",
+      "image": "Images/Menu/BreakFast/poori.jpg"
+    },
+    {
+      "name": "Pongal",
+      "image": "Images/Menu/BreakFast/pongal.jpg"
+    },
+    {
+      "name": "Mini Idly",
+      "image": "Images/Menu/BreakFast/Mini_idly.jpg"
+    },
+    {
+      "name": "Upma",
+      "image": "Images/Menu/BreakFast/upma.jpg"
+    },
+    {
+      "name": "Rice Puttu",
+      "image": "Images/Menu/BreakFast/Rice-Puttu.jpg"
+    },
+    {
+      "name": "Idiyappam", 
+      "image": "Images/Menu/BreakFast/idiyappam.webp"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Meals",
+      "image": "Images/Menu/Lunch/Meals.jpg"
+    },
+    {
+      "name": "Tomato",
+      "image": "Images/Menu/Lunch/Tomato.webp"
+    },
+    {
+      "name": "BisiBeleBath",
+      "image": "Images/Menu/Lunch/BisiBeleBath.jpg"
+    },
+    {
+      "name": "CurdRice",
+      "image": "Images/Menu/Lunch/curdRice.jpg"
+    },
+    {
+      "name": "VegBiryani",
+      "image": "Images/Menu/Lunch/VegBiryani.jpg"
+    },
+    {
+      "name": "Lemonrice",
+      "image": "Images/Menu/Lunch/lemonrice.jpg"
+    },
+    {
+      "name": "Coconut Rice",
+      "image": "Images/Menu/Lunch/coconutRice.jpg"
+    },
+    {
+      "name": "Sambar Rice",
+      "image": "Images/Menu/Lunch/Sambar.jpg"
+    }
+  ],
+  "snacks": [
+    {
+      "name": "Paniyaram",
+      "image": "Images/Menu/Snacks/Paniyaram.jpg"
+    },
+    {
+      "name": "kolukattai",
+      "image": "Images/Menu/Snacks/kolukattai.jpg"
+    },
+    {
+      "name": "Fries",
+      "image": "Images/Menu/Snacks/Fries.webp"
+    },
+    {
+      "name": "PaniPuri",
+      "image": "Images/Menu/Snacks/PaniPuri.jpg"
+    },
+    {
+      "name": "PavBhaji",
+      "image": "Images/Menu/Snacks/PavBhaji.jpg"
+    },
+    {
+      "name": "Samosa",
+      "image": "Images/Menu/Snacks/Samosa.jpg"
+    },
+    {
+      "name": "sandwich",
+      "image": "Images/Menu/Snacks/sandwich.jpg"
+    },
+    {
+      "name": "vegroll",
+      "image": "Images/Menu/Snacks/vegroll.jpg"
+    }
+  ],
+  "dinner": [
+    {
+      "name": "PaneerTikka",
+      "image": "Images/Menu/Dinner/PaneerTikka.jpg"
+    },
+    {
+      "name": "Roti",
+      "image": "Images/Menu/Dinner/Roti.jpg"
+    },
+    {
+      "name": "ButterNaan",
+      "image": "Images/Menu/Dinner/butterNaan.jpg"
+    },
+    {
+      "name": "Chilliparotta",
+      "image": "Images/Menu/Dinner/chilliparotta.jpg"
+    },
+    {
+      "name": "Gobi Manchurian",
+      "image": "Images/Menu/Dinner/gobiManchurian.webp"
+    },
+    {
+      "name": "Mushroom 65",
+      "image": "Images/Menu/Dinner/mushroom65.jpg"
+    },
+    {
+      "name": "Poratta",
+      "image": "Images/Menu/Dinner/poratta.jpg"
+    },
+    {
+      "name": "Schezwan Friedrice",
+      "image": "Images/Menu/Dinner/schezwanfriedrice.jpg"
+    }
+  ]
+}
