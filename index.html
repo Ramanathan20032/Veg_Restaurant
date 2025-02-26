@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maghil | Home</title>
+    <title>Veg Restaurant</title>
     <link rel="icon" href="images/red logo.png" type="image/x-icon" />
 
     <!-- Google Fonts -->
@@ -76,16 +76,16 @@
                 <a href="#" class="active-page">Home</a>
               </li>
               <li class="nav-item">
-                <a href="#">About</a>
+                <a href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a href="#">Menu</a>
+                <a href="#menu">Menu</a>
               </li>
               <li class="nav-item">
-                <a href="#">Gallery</a>
+                <a href="#gallery">Gallery</a>
               </li>
               <li class="nav-item">
-                <a href="#">Reach Us</a>
+                <a href="#reachus">Reach Us</a>
               </li>
               <li class="order-btn">
                 <a href="#">Order Now</a>
@@ -164,7 +164,7 @@
     </div>
 
     <!-- !About - Section -->
-    <section class="about-wrapper">
+    <section class="about-wrapper" id="about">
       <div class="container">
         <div class="about-container">
           <div class="row align-items-center">
@@ -246,13 +246,12 @@
     </section>
 
     <!-- !Menu - Section -->
-    <!-- <div class="menu-wrapper">
+    <div class="menu-wrapper" id="menu">
       <div class="container">
         <h2 class="text-center mb-4 p-1 section-title">
           Delicious Flavors on Your Plate
         </h2>
 
-        
         <div class="text-center mt-2 mb-1">
           <button
             class="btn btn-warning mx-2 mb-3 category-btn active"
@@ -286,10 +285,9 @@
           </button>
         </div>
 
-        
         <div id="menu-container" class="row g-4 pt-4 pb-5"></div>
       </div>
-    </div> -->
+    </div>
 
     <!-- !Excellence - Section -->
     <section class="Excellence-wrapper">
@@ -328,10 +326,9 @@
     </section>
 
     <!-- !Event - Section -->
-    <!-- <div class="event-wrapper">
+    <div class="event-wrapper">
       <div class="container pt-2">
         <div class="event-container">
-
           <h2 class="text-center mb-4 p-1 section-title">
             Delightful Bites for Special Events & Festivities
           </h2>
@@ -413,101 +410,260 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- !Gallery - Section -->
-    <!-- <div class="gallery-wrapper">
+    <!-- <div class="gallery-wrapper" id="gallery">
       <div class="container">
         <div class="gallery-container">
-
           <h2 class="text-center mb-4 p-1 section-title">
             A Glimpse into Our Culinary World
           </h2>
 
           <div class="row">
             <div class="col-12 col-sm-6 col-lg-3 px-2 mb-3">
-              <img src="Images/Gallery/OpeningCeremony.webp" alt="" class="img-fluid">
+              <img
+                src="Images/Gallery/OpeningCeremony.webp"
+                alt=""
+                class="img-fluid"
+              />
             </div>
             <div class="col-12 col-sm-6 col-lg-3 px-2 mb-3">
-              <img src="Images/Gallery/CabinPrivateDineIn.webp" alt="" class="img-fluid">
+              <img
+                src="Images/Gallery/CabinPrivateDineIn.webp"
+                alt=""
+                class="img-fluid"
+              />
             </div>
             <div class="col-12 col-sm-6 col-lg-3 px-2 mb-3">
-              <img src="Images/Gallery/Ambiance.webp" alt="" class="img-fluid">
+              <img
+                src="Images/Gallery/Ambiance.webp"
+                alt=""
+                class="img-fluid"
+              />
             </div>
             <div class="col-12 col-sm-6 col-lg-3 px-2 mb-3">
-              <img src="Images/Gallery/PlayArea.webp" alt="" class="img-fluid">
+              <img
+                src="Images/Gallery/PlayArea.webp"
+                alt=""
+                class="img-fluid"
+              />
             </div>
           </div>
-
         </div>
       </div>
     </div> -->
 
     <!--!Testimonial - Section -->
-    <!-- <section class="testimonial-section py-5">
-      <div class="container">
-        <h2 class="section-title text-center mb-4">What Our Customers Say</h2>
-        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-          
-          <div class="carousel-inner">
-            
-            <div class="carousel-item active">
-              <div class="testimonial-card text-center">
-                <p class="testimonial-text">"Absolutely delicious food! Highly recommended!"</p>
-                <div class="testimonial-author">
-                  <img src="Images/Testimonial/client1-free-img.png" alt="User 1">
-                  <h3>John Doe</h3>
-                  <span>Food Blogger</span>
+    <!-- <section class="testimonial-wrapper">
+      <div class="container px-3">
+        <div class="testimonial-container">
+          <h2 class="section-title text-center p-1 mb-4">
+            What Our Customers Say
+          </h2>
+
+          <div
+            id="testimonialCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-md-4 col-sm-6 col-12">
+                    <div class="testimonial-card">
+                      <blockquote>
+                        ❝ Dolor et eos labore, stet justo sed est sed. Diam sed
+                        sed dolor stet amet eirmod eos labore diam ❞
+                      </blockquote>
+                      <div class="client">
+                        <img
+                          src="https://randomuser.me/api/portraits/women/1.jpg"
+                          alt="Client"
+                        />
+                        <div>
+                          <p class="name">Client Name</p>
+                          <p class="profession">Profession</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 d-none d-sm-block">
+                    <div class="testimonial-card">
+                      <blockquote>
+                        ❝ Dolor et eos labore, stet justo sed est sed. Diam sed
+                        sed dolor stet amet eirmod eos labore diam ❞
+                      </blockquote>
+                      <div class="client">
+                        <img
+                          src="https://randomuser.me/api/portraits/women/2.jpg"
+                          alt="Client"
+                        />
+                        <div>
+                          <p class="name">Client Name</p>
+                          <p class="profession">Profession</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 d-none d-md-block">
+                    <div class="testimonial-card">
+                      <blockquote>
+                        ❝ Dolor et eos labore, stet justo sed est sed. Diam sed
+                        sed dolor stet amet eirmod eos labore diam ❞
+                      </blockquote>
+                      <div class="client">
+                        <img
+                          src="https://randomuser.me/api/portraits/men/1.jpg"
+                          alt="Client"
+                        />
+                        <div>
+                          <p class="name">Client Name</p>
+                          <p class="profession">Profession</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-md-4 col-sm-6 col-12">
+                    <div class="testimonial-card">
+                      <blockquote>
+                        ❝ Dolor et eos labore, stet justo sed est sed. Diam sed
+                        sed dolor stet amet eirmod eos labore diam ❞
+                      </blockquote>
+                      <div class="client">
+                        <img
+                          src="https://randomuser.me/api/portraits/men/2.jpg"
+                          alt="Client"
+                        />
+                        <div>
+                          <p class="name">Client Name</p>
+                          <p class="profession">Profession</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 d-none d-sm-block">
+                    <div class="testimonial-card">
+                      <blockquote>
+                        ❝ Dolor et eos labore, stet justo sed est sed. Diam sed
+                        sed dolor stet amet eirmod eos labore diam ❞
+                      </blockquote>
+                      <div class="client">
+                        <img
+                          src="https://randomuser.me/api/portraits/women/3.jpg"
+                          alt="Client"
+                        />
+                        <div>
+                          <p class="name">Client Name</p>
+                          <p class="profession">Profession</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 d-none d-md-block">
+                    <div class="testimonial-card">
+                      <blockquote>
+                        ❝ Dolor et eos labore, stet justo sed est sed. Diam sed
+                        sed dolor stet amet eirmod eos labore diam ❞
+                      </blockquote>
+                      <div class="client">
+                        <img
+                          src="https://randomuser.me/api/portraits/men/3.jpg"
+                          alt="Client"
+                        />
+                        <div>
+                          <p class="name">Client Name</p>
+                          <p class="profession">Profession</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-    
-            <div class="carousel-item">
-              <div class="testimonial-card text-center">
-                <p class="testimonial-text">"Fantastic service and great ambiance!"</p>
-                <div class="testimonial-author">
-                  <img src="Images/Testimonial/client2-free-img.png" alt="User 2">
-                  <h3>Jane Smith</h3>
-                  <span>Travel Enthusiast</span>
-                </div>
-              </div>
-            </div>
-    
-            <div class="carousel-item">
-              <div class="testimonial-card text-center">
-                <p class="testimonial-text">"Best dining experience! Will come again."</p>
-                <div class="testimonial-author">
-                  <img src="Images/Testimonial/client4-free-img.png" alt="User 3">
-                  <h3>Michael Brown</h3>
-                  <span>Entrepreneur</span>
-                </div>
-              </div>
-            </div>
-    
-            <div class="carousel-item">
-              <div class="testimonial-card text-center">
-                <p class="testimonial-text">"A must-visit restaurant with top-notch quality!"</p>
-                <div class="testimonial-author">
-                  <img src="Images/Testimonial/pic50-free-img.png" alt="User 4">
-                  <h3>Sarah Lee</h3>
-                  <span>Chef</span>
-                </div>
-              </div>
+
+            <div class="carousel-indicators custom-indicators">
+              <button
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide-to="1"
+              ></button>
             </div>
           </div>
-    
-          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </button>
-    
         </div>
       </div>
     </section> -->
+
+    <!-- !Footer -->
+    <!-- <footer class="footer-wrapper" id="reachus">
+      <div class="container">
+        <div class="footer-container">
+
+          <div class="row align-items-center">
+
+            
+            <div class="col-12 col-md-4 text-center text-md-start order-2 order-md-1 mb-4">
+              <h5 class="title">Address</h5>
+              <ul class="list-unstyled">
+                <li class="mb-1"><a href="#" class="text-decoration-none ad">4989 Stelton Road, South Plainfield, NJ 07080</a></li>
+                <li class="mb-1"><a href="#" class="text-decoration-none ad">1900 – 123 456 78</a></li>
+                <li class=""><a href="#" class="text-decoration-none ad">info@ecofoods.com</a></li>
+              </ul>
+            </div>
+
+            
+            <div class="col-12 col-md-4 text-center order-1 order-md-2 mb-4">
+              <a href="#">
+                <img src="Images/logo.png" alt="Pizzle Logo" class="mb-2 image">
+              </a>
+              <div class="d-flex justify-content-center gap-2 mt-2">
+                <a href="#" class="fs-5"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="fs-5"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="fs-5"><i class="fab fa-x-twitter"></i></a>
+              </div>
+            </div>
+
+            
+            <div class="col-12 col-md-4 text-center text-md-end order-3 mb-2 mb-md-4">
+              <h5 class="title">FAQ's</h5>
+              <ul class="list-unstyled">
+                <li class="mb-1"><strong>Privacy Policy</strong></li>
+                <li class="mb-1"><strong>Terms & Condition</strong></li>
+                <li class="mb-1"><strong>Support</strong></li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </footer> -->
+
+    <!-- <hr class="m-0"> -->
+
+    <!-- !Copyright -->
+    <!-- <div class="text-center copy-right-wrapper">
+      <p class="mb-0 p-2 p-sm-3 copy-right">&copy; Copyright 2025 ecofoods. All Rights Reserved. <br> Developed by <a href="https://maghil-web-page.netlify.app/" target="_blank" rel="noopener noreferrer" style="color: #85A947;">Maghil</a></p>
+    </div> -->
+
+    <!-- !Page-up -->
+    <!-- <div class="page-up">
+      <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+    </div> -->
+
+
   </body>
 </html>
