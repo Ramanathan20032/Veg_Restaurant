@@ -240,3 +240,121 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });  
+
+
+// !--------------------------------------------------------------------------------
+// About Us Animation
+document.addEventListener("DOMContentLoaded", function () {
+  const elementsToObserve = document.querySelectorAll(".zoom, .up");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target); // To trigger only once
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  elementsToObserve.forEach((element) => {
+    observer.observe(element);
+  });
+});
+
+
+// !--------------------------------------------------------------------------------
+// Excellence Animation
+document.addEventListener("DOMContentLoaded", function () {
+  const elementsToObserve = document.querySelectorAll(".zoom1, .up1");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target); // To trigger only once
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  elementsToObserve.forEach((element) => {
+    observer.observe(element);
+  });
+});
+
+
+// !--------------------------------------------------------------------------------
+// Gallery In View
+
+// Get all the images inside the gallery
+const galleryImages = document.querySelectorAll(".gallery-container  img");
+
+// Get the lightbox and lightbox image elements
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const closeBtn = document.querySelector(".lightbox .close");
+
+// Add event listener to each image in the gallery
+galleryImages.forEach((image) => {
+  image.addEventListener("click", (e) => {
+    // Set the clicked image source to the lightbox image
+    lightboxImage.src = e.target.src;
+    // Display the lightbox
+    lightbox.style.display = "flex";
+  });
+});
+
+// Close the lightbox when the close button is clicked
+closeBtn.addEventListener("click", () => {
+  lightbox.style.display = "none";
+});
+
+// Close the lightbox if the user clicks anywhere outside the image
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) {
+    lightbox.style.display = "none";
+  }
+});
+
+
+// !--------------------------------------------------------------------------------
+// Event
+document.addEventListener("DOMContentLoaded", () => {
+  const zoomElements = document.querySelectorAll(".event-wrapper .row .e-zoom");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate");
+        observer.unobserve(entry.target); // Stop observing after animation triggers
+      }
+    });
+  });
+
+  zoomElements.forEach((element) => {
+    observer.observe(element);
+  });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".p-right, .p-left");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.5 });
+
+  elements.forEach((element) => {
+    observer.observe(element);
+  });
+});

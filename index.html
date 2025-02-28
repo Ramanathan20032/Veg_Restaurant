@@ -168,11 +168,11 @@
       <div class="container">
         <div class="about-container">
           <div class="row align-items-center">
-            <div class="col-12 col-lg-6 text-center px-3 mb-5 mb-lg-0">
+            <div class="col-12 col-lg-6 text-center px-3 mb-5 mb-lg-0 zoom">
               <img src="Images/About.png" alt="" class="img-fluid" />
             </div>
 
-            <div class="col-12 col-lg-6 px-3">
+            <div class="col-12 col-lg-6 px-3 up">
               <div class="content-section text-center text-lg-start">
                 <h2 class="heading">Traditional South Indian Delights</h2>
                 <h6 class="sub-heading">
@@ -209,7 +209,7 @@
           </h2>
 
           <div class="row align-items-center text-center">
-            <div class="col-12 col-sm-6 mb-4 px-3">
+            <div class="col-12 col-sm-6 mb-4 px-3 p-right">
               <div class="single-service">
                 <img
                   src="Images/Popular/BreakFast-Combo.webp"
@@ -225,7 +225,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-sm-6 mb-4 px-3">
+            <div class="col-12 col-sm-6 mb-4 px-3 p-left">
               <div class="single-service">
                 <img
                   src="Images/Popular/Lunch-Combo.webp"
@@ -295,12 +295,12 @@
         <div class="Excellence-container">
           <div class="row align-items-center">
             <div
-              class="col-12 col-lg-6 text-center px-3 mb-5 mb-lg-0 order-1 order-lg-2"
+              class="col-12 col-lg-6 text-center px-3 mb-5 mb-lg-0 order-1 order-lg-2 zoom1"
             >
               <img src="Images/Excellence.png" alt="" class="img-fluid" />
             </div>
 
-            <div class="col-12 col-lg-6 px-3 order-2 order-lg-1">
+            <div class="col-12 col-lg-6 px-3 order-2 order-lg-1 up1">
               <div class="content-section text-center text-lg-start">
                 <h2 class="heading">Excellence in South Indian Cuisine</h2>
                 <h6 class="sub-heading">Time-Honored Recipes, Pure Flavors</h6>
@@ -334,7 +334,7 @@
           </h2>
 
           <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 e-zoom">
               <div class="card">
                 <div class="card-img-container">
                   <img
@@ -360,7 +360,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4 d-block d-md-none d-lg-block">
+            <div class="col-12 col-md-6 col-lg-4 d-block d-md-none d-lg-block e-zoom">
               <div class="card">
                 <div class="card-img-container">
                   <img
@@ -386,7 +386,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 e-zoom">
               <div class="card">
                 <div class="card-img-container">
                   <img
@@ -416,8 +416,10 @@
 
     <!-- !Gallery - Section -->
     <div class="gallery-wrapper" id="gallery">
+
       <div class="container">
         <div class="gallery-container">
+
           <h2 class="text-center mb-4 p-1 section-title">
             A Glimpse into Our Culinary World
           </h2>
@@ -454,6 +456,18 @@
           </div>
         </div>
       </div>
+
+      <!-- Lightbox container -->
+      <div class="lightbox" id="lightbox">
+        <span class="close d-none">&times;</span>
+        <img
+          class="lightbox-image"
+          id="lightboxImage"
+          src=""
+          alt="Enlarged view"
+        />
+      </div>
+
     </div>
 
     <!--!Testimonial - Section -->
@@ -611,23 +625,37 @@
     <footer class="footer-wrapper" id="reachus">
       <div class="container">
         <div class="footer-container">
-
           <div class="row align-items-center">
-
-            
-            <div class="col-12 col-md-4 text-center text-md-start order-2 order-md-1 mb-4">
+            <div
+              class="col-12 col-md-4 text-center text-md-start order-2 order-md-1 mb-4"
+            >
               <h5 class="title">Address</h5>
               <ul class="list-unstyled">
-                <li class="mb-1"><a href="#" class="text-decoration-none ad">4989 Stelton Road, South Plainfield, NJ 07080</a></li>
-                <li class="mb-1"><a href="#" class="text-decoration-none ad">1900 – 123 456 78</a></li>
-                <li class=""><a href="#" class="text-decoration-none ad">info@ecofoods.com</a></li>
+                <li class="mb-1">
+                  <a href="#" class="text-decoration-none ad"
+                    >4989 Stelton Road, South Plainfield, NJ 07080</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a href="#" class="text-decoration-none ad"
+                    >1900 – 123 456 78</a
+                  >
+                </li>
+                <li class="">
+                  <a href="#" class="text-decoration-none ad"
+                    >info@ecofoods.com</a
+                  >
+                </li>
               </ul>
             </div>
 
-            
             <div class="col-12 col-md-4 text-center order-1 order-md-2 mb-4">
               <a href="#">
-                <img src="Images/logo.png" alt="Pizzle Logo" class="mb-2 image">
+                <img
+                  src="Images/logo.png"
+                  alt="Pizzle Logo"
+                  class="mb-2 image"
+                />
               </a>
               <div class="d-flex justify-content-center gap-2 mt-2">
                 <a href="#" class="fs-5"><i class="fab fa-facebook"></i></a>
@@ -636,34 +664,53 @@
               </div>
             </div>
 
-            
-            <div class="col-12 col-md-4 text-center text-md-end order-3 mb-2 mb-md-4">
+            <div
+              class="col-12 col-md-4 text-center text-md-end order-3 mb-2 mb-md-4"
+            >
               <h5 class="title">FAQ's</h5>
               <ul class="list-unstyled">
-                <li class="mb-1"><strong>Privacy Policy</strong></li>
-                <li class="mb-1"><strong>Terms & Condition</strong></li>
-                <li class="mb-1"><strong>Support</strong></li>
+                <li class="mb-1">
+                  <a href="#" class="text-decoration-none ad"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a href="#" class="text-decoration-none ad"
+                    >Terms & Condition</a
+                  >
+                </li>
+                <li class="">
+                  <a href="#" class="text-decoration-none ad"
+                    >Support</a
+                  >
+                </li>
               </ul>
             </div>
-
           </div>
-
         </div>
       </div>
     </footer>
 
-    <hr class="m-0">
+    <hr class="m-0" />
 
     <!-- !Copyright -->
     <div class="text-center copy-right-wrapper">
-      <p class="mb-0 p-2 p-sm-3 copy-right">&copy; Copyright 2025 ecofoods. All Rights Reserved. <br> Developed by <a href="https://maghil-web-page.netlify.app/" target="_blank" rel="noopener noreferrer" style="color: #85A947;">Maghil</a></p>
+      <p class="mb-0 p-2 p-sm-3 copy-right">
+        &copy; Copyright 2025 ecofoods. All Rights Reserved. <br />
+        Developed by
+        <a
+          href="https://maghil-web-page.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color: #85a947"
+          >Maghil</a
+        >
+      </p>
     </div>
 
     <!-- !Page-up -->
     <div class="page-up">
       <a href="#"><i class="fa-solid fa-angle-up"></i></a>
     </div>
-
-
   </body>
 </html>
